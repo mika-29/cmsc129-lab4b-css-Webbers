@@ -93,7 +93,7 @@ header #title {
     transform: translate(240%, -375%);
 }
 
-.navBar a{
+.navigation{
     text-decoration: none;
     background-color: var(--yellow-orange);
     color: var(--white);
@@ -111,7 +111,109 @@ header #title {
 }
 
 /*Home*/
+.imgBanner {
+    width: 60vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50px;
+    transform: translate(60%, 5%);
+}
 
+a[href="#bottomPage"] { 
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transform: translate(580%, 20%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+a[href="#bottomPage"]:hover {
+    transform: translate(580%, 20%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+.home .coffee {
+    width: 40%;
+    transform: translate(120%, 8%);
+}
+
+.home .coffee h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue-green);
+    padding: 20px;
+}
+
+.home .coffee ol {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.home .coffee ol li {
+    color: var(--dark-brick);
+}
+
+.home .coffee .definition {
+    transform: translate(-90%, -330%);
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--blue-green);
+    font-weight: bold;
+    width: 40vw;
+}
+
+.home .coffee .definition span:nth-child(1){
+    display: block;
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+}
+
+.home .coffee .definition span:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+}
+
+.home .coffee img {
+    width: 100%;
+    transform: translate(-110%, -280%);
+    border-radius: 50px;
+}
+
+.home a[href="order.html"] button{
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    transform: translate(100%, -2000%);
+}
+
+.home a[href="order.html"] button:hover {
+    transform: translate(100%, -2000%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+.home #bottomPage {
+    transform: translate(-110%, -230%);
+    background-image: url(Images/brickwall.png);
+    border-radius: 50px;
+    color: white;
+}
+  
 /* 
 
 
