@@ -168,6 +168,7 @@ a[href="#bottomPage"]:hover {
     color: var(--blue-green);
     font-weight: bold;
     width: 40vw;
+    position:absolute;
 }
 
 .home .coffee .definition span:nth-child(1){
@@ -186,7 +187,7 @@ a[href="#bottomPage"]:hover {
 .home .coffee img {
     width: 100%;
     position: absolute;
-    transform: translate(-110%, -390%);
+    transform: translate(-110%, -280%);
     border-radius: 50px;
 }
 
@@ -200,16 +201,16 @@ a[href="#bottomPage"]:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
     border: none;
-    transform: translate(100%, -2150%);
+    transform: translate(100%, -1350%);
 }
 
 .home a[href="order.html"] button:hover {
-    transform: translate(100%, -2150%) scale(1.1);
+    transform: translate(100%, -1350%) scale(1.1);
     background-color: var(--blue-green);
 }
 
 .home #bottomPage {
-    transform: translate(-110%, -260%);
+    transform: translate(-110%, -150%);
     background-image: url(Images/brickwall.png);
     border-radius: 50px;
     color: white;
@@ -225,13 +226,13 @@ a[href="#title"] {
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 1.5rem;
-    transform: translate(-350%, -2150%);
+    transform: translate(-350%, -400%);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
 }
 
 a[href="#title"]:hover {
-    transform: translate(-350%, -2150%) scale(1.1);
+    transform: translate(-350%, -400%) scale(1.1);
     background-color: var(--blue-green);
 }
 
@@ -246,6 +247,7 @@ footer {
     font-size: 1rem;
     justify-content: center;
     min-height: 100px;
+    margin-top: 50px;
 }
 
 footer #title {
