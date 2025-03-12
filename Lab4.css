@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/*HOME Header*/
+/*Header*/
 header {
     background-image: url(Images/brickwall.png);
     height: 70vh;
@@ -110,7 +110,11 @@ header #title {
     background-color: var(--blue-green);
 }
 
+/*Home*/
+
 /* 
+
+
 LABORATORY EXERCISE #4
 Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
 You are NOT allowed to modify/change the HTML files.
