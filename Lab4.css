@@ -274,22 +274,112 @@ footer p{
 }
 
 /*Order*/
+.coffee h2 {
+    transform: translate(20%, -340%);
+    font-size: 10rem;
+    text-align: left;
+    color: var(--yellow-orange);
+    font-weight: bold;
+    width: 40vw;
+}
 
+#tagline {
+    transform: translate(8%, -170%);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--blue-green);
+    font-weight: 500;
+    text-wrap: balance;
+    width: 40vw;
+}
 
-/*About*/
+#coffee_choices tr:nth-child(1) td {
+  transform: translate(3%, -250%);
+    font-size: 7.5rem;
+    font-weight: bold;
+    color: var(--dark-brick); 
+    letter-spacing: 2px;
+    text-align: left;
+    width: 40%;
+    position: absolute;
+}
+#coffee_choices tr:nth-child(1) .coffeeTitle::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 243%; /* Or adjust the length here*/
+        height: 2px;
+        background-color: var(--dark-brick);
+    }
 
+#coffee_choices tr:nth-child(2) td {
+    padding: 10px;
+    text-align: center; /* Ensures images stay centered */
+    border-collapse: collapse;
+    transform: translate(0px, -250px);
+}
 
-/* 
- 
+.coffeeImg {
+    width: 300px; /* Adjust to fit layout */
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
 
-LABORATORY EXERCISE #4
-Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
-You are NOT allowed to modify/change the HTML files.
+.coffeeImg:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
 
-Tips: 
-1. There are some elements that have no classes at all (such as the list of steps in making coffee), to style them, 
-you can use contextual selectors or attribute selectors to select them for styling
-2. Just with any web design project, it's best to draft a wireframe first before you start working with the CSS.
-3. You do not have to select all the classes/ids in the web pages; 
-the main goal is to create a website that is both visually appealing and user-friendly.
-*/
+#coffee_choices tr:nth-child(3) .label {
+    padding: 10px;
+    text-align: center; 
+    transform: translate(0px, -260px);
+}
+
+#coffee_choices tr:nth-child(4) td {
+    transform: translate(3%, -140%);
+    font-size: 7.5rem;
+    font-weight: bold;
+    color: var(--dark-brick); 
+    letter-spacing: 2px;
+    text-align: left;
+    width: 60%;
+    position:absolute;
+}
+#coffee_choices tr:nth-child(4) .coffeeTitle::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 160%; /* Or adjust the length here*/
+        height: 2px;
+        background-color: var(--dark-brick);
+    }
+
+#coffee_choices tr:nth-child(5) td {
+    padding: 10px;
+    text-align: center; /* Ensures images stay centered */
+    border-collapse: collapse;
+    transform: translate(0px, -50px);
+}
+
+.coffeeImg {
+    width: 300px; /* Adjust to fit layout */
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.coffeeImg:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#coffee_choices tr:nth-child(6) .label {
+    padding: 10px;
+    text-align: center; 
+    transform: translate(0px, -60px);
+}
+
