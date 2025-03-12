@@ -308,28 +308,28 @@ footer p{
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 243%; /* Or adjust the length here*/
+        width: 243%; =
         height: 2px;
         background-color: var(--dark-brick);
     }
 
 #coffee_choices tr:nth-child(2) td {
     padding: 10px;
-    text-align: center; /* Ensures images stay centered */
+    text-align: center; 
     border-collapse: collapse;
     transform: translate(0px, -250px);
 }
 
 .coffeeImg {
-    width: 300px; /* Adjust to fit layout */
+    width: 300px; 
     height: 250px;
     border-radius: 20px;
     object-fit: cover;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease;
 }
 
 .coffeeImg:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); =
 }
 
 #coffee_choices tr:nth-child(3) .label {
@@ -353,20 +353,20 @@ footer p{
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 160%; /* Or adjust the length here*/
+        width: 160%; =
         height: 2px;
         background-color: var(--dark-brick);
     }
 
 #coffee_choices tr:nth-child(5) td {
     padding: 10px;
-    text-align: center; /* Ensures images stay centered */
+    text-align: center; =
     border-collapse: collapse;
     transform: translate(0px, -50px);
 }
 
 .coffeeImg {
-    width: 300px; /* Adjust to fit layout */
+    width: 300px; 
     height: 250px;
     border-radius: 20px;
     object-fit: cover;
@@ -374,7 +374,7 @@ footer p{
 }
 
 .coffeeImg:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
 }
 
 #coffee_choices tr:nth-child(6) .label {
