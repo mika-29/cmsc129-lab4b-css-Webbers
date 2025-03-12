@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
+:root {
+    -light-yellow: #FFE8BD;
+    -yellow-orange: #D19240;
+    -blue-green: #839792;
+    -dark-brick:#813D3A;
+    -white: #FFFFFF;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,6 +22,7 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: Fredoka;
 }
 
 /* 5. Improve media defaults */
@@ -50,11 +60,17 @@ h1, h2, h3, h4, h5, h6 {
 /*HOME Header*/
 .home header {
     background-image: url(Images/brickwall.png);
-    height: 60vh;
+    height: 70vh;
 }
 
 hr {
     border: 0px solid #000;
+}
+
+.home header #title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: left;
 }
 /* 
 LABORATORY EXERCISE #4
