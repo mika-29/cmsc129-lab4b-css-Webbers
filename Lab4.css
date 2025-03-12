@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
 :root {
-    -light-yellow: #FFE8BD;
-    -yellow-orange: #D19240;
-    -blue-green: #839792;
-    -dark-brick:#813D3A;
-    -white: #FFFFFF;
+    --light-yellow: #FFE8BD;
+    --yellow-orange: #D19240;
+    --blue-green: #839792;
+    --dark-brick:#813D3A;
+    --white: #FFFFFF;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -23,6 +23,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: Fredoka;
+  background-color: var(--light-yellow);
 }
 
 /* 5. Improve media defaults */
@@ -52,13 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 /*
   9. Create a root stacking context
 */
-
 #root, #__next {
   isolation: isolate;
 }
 
 /*HOME Header*/
-.home header {
+header {
     background-image: url(Images/brickwall.png);
     height: 70vh;
 }
@@ -67,11 +67,49 @@ hr {
     border: 0px solid #000;
 }
 
-.home header #title {
-    font-size: 3rem;
-    color: #fff;
+header #title {
+    font-size: 7rem;
+    color: var(--light-yellow);
     text-align: left;
+    padding: 5%;
+    line-height: 110%;
 }
+
+.home p{
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--white);
+    width: 60%;
+    padding: 5%;
+    transform: translate(2%, -90%);   
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 2%;
+    gap: 3%;
+    transform: translate(240%, -375%);
+}
+
+.navBar a{
+    text-decoration: none;
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
 /* 
 LABORATORY EXERCISE #4
 Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
