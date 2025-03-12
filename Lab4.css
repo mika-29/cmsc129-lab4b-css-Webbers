@@ -75,7 +75,7 @@ header #title {
     line-height: 110%;
 }
 
-.home p{
+#welcome{
     font-size: 1.5rem;
     position: absolute;
     color: var(--white);
@@ -112,13 +112,13 @@ header #title {
 
 /*Home*/
 .imgBanner {
-    width: 60vw;
+    width: 50vw;
     height: 70vh;
     overflow: hidden;
     position: relative;
     object-fit: cover;
     border-radius: 50px;
-    transform: translate(60%, 5%);
+    transform: translate(90%, 5%);
 }
 
 a[href="#bottomPage"] { 
@@ -130,13 +130,13 @@ a[href="#bottomPage"] {
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 1.5rem;
-    transform: translate(580%, 20%);
+    transform: translate(580%, 50%);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
 }
 
 a[href="#bottomPage"]:hover {
-    transform: translate(580%, 20%) scale(1.1);
+    transform: translate(580%, 50%) scale(1.1);
     background-color: var(--blue-green);
 }
 
@@ -162,7 +162,7 @@ a[href="#bottomPage"]:hover {
 }
 
 .home .coffee .definition {
-    transform: translate(-90%, -330%);
+    transform: translate(-115%, -380%);
     font-size: 1.3rem;
     text-align: center;
     color: var(--blue-green);
@@ -185,7 +185,8 @@ a[href="#bottomPage"]:hover {
 
 .home .coffee img {
     width: 100%;
-    transform: translate(-110%, -280%);
+    position: absolute;
+    transform: translate(-110%, -390%);
     border-radius: 50px;
 }
 
@@ -199,23 +200,79 @@ a[href="#bottomPage"]:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
     border: none;
-    transform: translate(100%, -2000%);
+    transform: translate(100%, -2150%);
 }
 
 .home a[href="order.html"] button:hover {
-    transform: translate(100%, -2000%) scale(1.1);
+    transform: translate(100%, -2150%) scale(1.1);
     background-color: var(--blue-green);
 }
 
 .home #bottomPage {
-    transform: translate(-110%, -230%);
+    transform: translate(-110%, -260%);
     background-image: url(Images/brickwall.png);
     border-radius: 50px;
     color: white;
+    padding: 30px;
 }
-  
-/* 
 
+a[href="#title"] {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transform: translate(-350%, -2150%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+a[href="#title"]:hover {
+    transform: translate(-350%, -2150%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Images/brickwall.png);
+    color: var(--white);
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    justify-content: center;
+    min-height: 100px;
+}
+
+footer #title {
+    all: unset;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer .contacts {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+footer p{
+    font-size: 1rem;
+    text-align: center;
+    display: inline;
+}
+
+/* 
+ 
 
 LABORATORY EXERCISE #4
 Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
