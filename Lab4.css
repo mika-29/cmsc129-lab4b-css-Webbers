@@ -405,17 +405,6 @@ footer p{
 
 
 /*About*/
-
-
-/* 
- 
-
-LABORATORY EXERCISE #4
-Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
-You are NOT allowed to modify/change the HTML files.
-
-<<<<<<< HEAD
-/*About*/
 .about .coffee .imgBanner{
     width: 330px;
     height: 330px;
@@ -587,7 +576,14 @@ You are NOT allowed to modify/change the HTML files.
 }
 
 
+/* 
+ 
 
+LABORATORY EXERCISE #4
+Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
+You are NOT allowed to modify/change the HTML files.
+
+<<<<<<< HEAD
 
 =======
 Tips: 
