@@ -133,7 +133,7 @@ header #title {
 }
 
 /*Coffee definition*/
-.coffee:nth-of-type(3){
+.home .coffee:nth-of-type(3){
     font-size: 1.25rem;
     width: 80%;
     text-align: center;
@@ -144,26 +144,26 @@ header #title {
     color: var(--blue-green);
 }
 
-.coffee p.definition span.emphasis:nth-child(1){
+.home .coffee p.definition span.emphasis:nth-child(1){
     font-size: 6rem;
     font-weight: bold;
     color: var(--yellow-orange);
     display: block;
 }
 
-.coffee p.definition span.emphasis:nth-child(2){
+.home .coffee p.definition span.emphasis:nth-child(2){
     font-size: 2rem;
     font-weight: bold;
     color: var(--yellow-orange);
 }
 
-#banner{
+.home #banner{
     grid-column-start: 2;
     grid-row-start: -12;
     margin-top: 2rem;
 }
 
-.imgBanner {
+.home .imgBanner {
     width: 50vw;
     height: 60vh;
     overflow: hidden;
@@ -174,7 +174,7 @@ header #title {
 }
 
 
-a[href="#bottomPage"] { 
+.home a[href="#bottomPage"] { 
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -194,13 +194,13 @@ a[href="#bottomPage"] {
     margin-left: 450px;
 }
 
-a[href="#bottomPage"]:hover {
+.home a[href="#bottomPage"]:hover {
     transform: scale(1.1);
     background-color: var(--blue-green);
 }
 
 /*Coffee Image*/
-.coffee:nth-of-type(4){
+.home .coffee:nth-of-type(4){
     margin-top: 120px;
     grid-column-start: 1;
     grid-row-start: -11;
@@ -242,7 +242,7 @@ a[href="#bottomPage"]:hover {
 }
 
 /*Steps in Making Coffee*/
-.coffee:nth-of-type(2){
+.home .coffee:nth-of-type(2){
     grid-column-start: 2;
     grid-row-start: -11;
     align-self: center;
@@ -253,7 +253,7 @@ a[href="#bottomPage"]:hover {
     margin-top: 100px;
 }
 
-.coffee:nth-of-type(2) h2{
+.home .coffee:nth-of-type(2) h2{
     font-size: 4rem;
     width: 80%;
     color: var(--blue-green);
@@ -261,17 +261,17 @@ a[href="#bottomPage"]:hover {
     margin: 0 auto;
 }
 
-.coffee:nth-of-type(2) ol{
+.home .coffee:nth-of-type(2) ol{
     font-size: 1.3rem;
     text-align: justify;
 }
 
-.coffee:nth-of-type(2) ol li{
+.home .coffee:nth-of-type(2) ol li{
     color: var(--dark-brick);
 }
 
 /*Coffee History*/
-.coffee:nth-of-type(5){
+.home .coffee:nth-of-type(5){
     width: 100%;
     display: flex;
     align-items: center;
@@ -294,7 +294,7 @@ a[href="#bottomPage"]:hover {
 }
 
 /*Go to Top Button*/
-a[href="#title"] {
+.home a[href="#title"] {
     display: inline-block;
     text-decoration: none;
     background-color: var(--dark-brick);
@@ -309,7 +309,7 @@ a[href="#title"] {
     margin-right: 50%;
 }
 
-a[href="#title"]:hover {
+.home a[href="#title"]:hover {
     transform: scale(1.1);
     background-color: var(--blue-green);
 }
