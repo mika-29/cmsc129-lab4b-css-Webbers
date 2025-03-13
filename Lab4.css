@@ -134,7 +134,7 @@ header #title {
 
 /*Coffee definition*/
 .coffee:nth-of-type(3){
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     width: 80%;
     text-align: center;
     grid-column-start: 1;
