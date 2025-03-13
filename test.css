@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
+:root {
+    --light-yellow: #FFE8BD;
+    --yellow-orange: #D19240;
+    --blue-green: #839792;
+    --dark-brick:#813D3A;
+    --white: #FFFFFF;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: Fredoka;
+  background-color: var(--light-yellow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*Header*/
+header {
+    background-image: url(Images/brickwall.png);
+    height: 60vh;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+hr {
+    border: 0px solid #000;
+}
+
+header #title {
+    position: relative;
+    font-size: 6rem;
+    color: var(--light-yellow);
+    text-align: left;
+    padding: 5%;
+    line-height: 110%;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+#welcome{
+    font-size: 1.5rem;
+    color: var(--white);
+    width: 60%;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 2%;
+    gap: 3%;
+    right: 20px;
+}
+
+.navigation{
+    text-decoration: none;
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Home*/

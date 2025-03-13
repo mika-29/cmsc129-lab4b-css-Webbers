@@ -24,6 +24,12 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: Fredoka;
   background-color: var(--light-yellow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(12, auto);
+  gap: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 /* 5. Improve media defaults */
@@ -58,9 +64,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Header*/
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    gap: 20px;
+}
+
 header {
     background-image: url(Images/brickwall.png);
-    height: 70vh;
+    height: 65vh;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
 hr {
@@ -68,20 +86,22 @@ hr {
 }
 
 header #title {
-    font-size: 7rem;
+    position: relative;
+    font-size: 5.5rem;
     color: var(--light-yellow);
     text-align: left;
     padding: 5%;
     line-height: 110%;
+    width: 70%;
+    text-transform: uppercase;
 }
 
 #welcome{
     font-size: 1.5rem;
-    position: absolute;
     color: var(--white);
     width: 60%;
-    padding: 5%;
-    transform: translate(2%, -90%);   
+    position: absolute;
+    transform: translate(10%, 480%);
 }
 
 .navBar {
@@ -90,7 +110,7 @@ header #title {
     position: absolute;
     padding: 2%;
     gap: 3%;
-    transform: translate(240%, -375%);
+    right: 20px;
 }
 
 .navigation{
@@ -110,85 +130,92 @@ header #title {
     background-color: var(--blue-green);
 }
 
-/*Home*/
-.imgBanner {
-    width: 50vw;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
-    border-radius: 50px;
-    transform: translate(90%, 5%);
-}
-
-a[href="#bottomPage"] { 
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--dark-brick);
-    color: var(--white);
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 1.5rem;
-    transform: translate(580%, 50%);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease-in-out;
-}
-
-a[href="#bottomPage"]:hover {
-    transform: translate(580%, 50%) scale(1.1);
-    background-color: var(--blue-green);
-}
-
-.home .coffee {
-    width: 40%;
-    transform: translate(120%, 8%);
-}
-
-.home .coffee h2 {
-    font-size: 4rem;
+/*Coffee definition*/
+.coffee:nth-of-type(3){
+    font-size: 1.2rem;
+    width: 80%;
     text-align: center;
-    color: var(--blue-green);
-    padding: 20px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
 }
 
-.home .coffee ol {
-    font-size: 1.3rem;
-    text-align: justify;
-}
-
-.home .coffee ol li {
-    color: var(--dark-brick);
-}
-
-.home .coffee .definition {
-    transform: translate(-115%, -380%);
-    font-size: 1.3rem;
-    text-align: center;
-    color: var(--blue-green);
-    font-weight: bold;
-    width: 40vw;
-    position:absolute;
-}
-
-.home .coffee .definition span:nth-child(1){
-    display: block;
-    font-size: 8rem;
+.coffee p.definition span.emphasis:nth-child(1){
+    font-size: 6rem;
     font-weight: bold;
     color: var(--yellow-orange);
+    display: block;
 }
 
-.home .coffee .definition span:nth-child(2){
+.coffee p.definition span.emphasis:nth-child(2){
     font-size: 2rem;
     font-weight: bold;
     color: var(--yellow-orange);
 }
 
-.home .coffee img {
-    width: 100%;
-    position: absolute;
-    transform: translate(-110%, -280%);
+#banner{
+    grid-column-start: 2;
+    grid-row-start: -12;
+    margin-top: 2rem;
+}
+
+.imgBanner {
+    width: 50vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
     border-radius: 50px;
+    right: 20px;
+}
+
+
+a[href="#bottomPage"] { 
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 240px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    grid-column-start: 2;
+    grid-row-start: -11;
+    z-index: 1;
+    height: 60px;
+    margin-left: 450px;
+}
+
+a[href="#bottomPage"]:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Coffee Image*/
+.coffee:nth-of-type(4){
+    margin-top: 120px;
+    grid-column-start: 1;
+    grid-row-start: -11;
+    align-self: top;
+    justify-self: center;
+}
+
+
+.home .coffee img {
+    width: 600px;
+    border-radius: 50px;
+}
+
+.home a[href="order.html"] {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    align-self: center;
+    justify-self: center;
 }
 
 .home a[href="order.html"] button{
@@ -201,22 +228,67 @@ a[href="#bottomPage"]:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
     border: none;
-    transform: translate(100%, -1350%);
+    position: absolute;
+    transform: translate(-50%, -280%);
 }
 
 .home a[href="order.html"] button:hover {
-    transform: translate(100%, -1350%) scale(1.1);
+    transform: translate(-50%, -280%) scale(1.1);
     background-color: var(--blue-green);
 }
 
-.home #bottomPage {
-    transform: translate(-110%, -150%);
-    background-image: url(Images/brickwall.png);
-    border-radius: 50px;
-    color: white;
-    padding: 30px;
+/*Steps in Making Coffee*/
+.coffee:nth-of-type(2){
+    grid-column-start: 2;
+    grid-row-start: -11;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+    width: 80%;
+    margin-right: 50px;
+    margin-top: 100px;
 }
 
+.coffee:nth-of-type(2) h2{
+    font-size: 4rem;
+    width: 80%;
+    color: var(--blue-green);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.coffee:nth-of-type(2) ol{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.coffee:nth-of-type(2) ol li{
+    color: var(--dark-brick);
+}
+
+/*Coffee History*/
+.coffee:nth-of-type(5){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-top: 15rem;
+}
+
+.home #bottomPage {
+    margin-top: 50px;
+    background-image: url(Images/brickwall.png);
+    border-radius: 50px;
+    color: var(--light-yellow);
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+/*Go to Top Button*/
 a[href="#title"] {
     display: inline-block;
     text-decoration: none;
@@ -226,19 +298,19 @@ a[href="#title"] {
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 1.5rem;
-    transform: translate(-350%, -400%);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
+    margin-top: 10px;
+    margin-right: 50%;
 }
 
 a[href="#title"]:hover {
-    transform: translate(-350%, -400%) scale(1.1);
+    transform: scale(1.1);
     background-color: var(--blue-green);
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
+    grid-column: 1 / -1;
     align-items: center;
     background-image: url(Images/brickwall.png);
     color: var(--white);
@@ -247,7 +319,6 @@ footer {
     font-size: 1rem;
     justify-content: center;
     min-height: 100px;
-    margin-top: 50px;
 }
 
 footer #title {
@@ -273,23 +344,11 @@ footer p{
     display: inline;
 }
 
-/*Order*/
 
 
-/*About*/
 
 
-/* 
- 
 
-LABORATORY EXERCISE #4
-Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
-You are NOT allowed to modify/change the HTML files.
 
-Tips: 
-1. There are some elements that have no classes at all (such as the list of steps in making coffee), to style them, 
-you can use contextual selectors or attribute selectors to select them for styling
-2. Just with any web design project, it's best to draft a wireframe first before you start working with the CSS.
-3. You do not have to select all the classes/ids in the web pages; 
-the main goal is to create a website that is both visually appealing and user-friendly.
-*/
+
+

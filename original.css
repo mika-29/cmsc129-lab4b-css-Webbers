@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
+:root {
+    --light-yellow: #FFE8BD;
+    --yellow-orange: #D19240;
+    --blue-green: #839792;
+    --dark-brick:#813D3A;
+    --white: #FFFFFF;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: Fredoka;
+  background-color: var(--light-yellow);
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*Header*/
+header {
+    background-image: url(Images/brickwall.png);
+    height: 70vh;
+}
+
+hr {
+    border: 0px solid #000;
+}
+
+header #title {
+    font-size: 7rem;
+    color: var(--light-yellow);
+    text-align: left;
+    padding: 5%;
+    line-height: 110%;
+}
+
+#welcome{
+    font-size: 1.5rem;
+    position: relative;
+    color: var(--white);
+    width: 60%;
+    padding: 5%;
+    transform: translate(2%, -90%);   
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 2%;
+    gap: 3%;
+    transform: translate(240%, -375%);
+}
+
+.navigation{
+    text-decoration: none;
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Home*/
+.imgBanner {
+    width: 50vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50px;
+    transform: translate(90%, 5%);
+}
+
+a[href="#bottomPage"] { 
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transform: translate(580%, 50%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+a[href="#bottomPage"]:hover {
+    transform: translate(580%, 50%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+.home .coffee {
+    width: 40%;
+    transform: translate(120%, 8%);
+}
+
+.home .coffee h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue-green);
+    padding: 20px;
+}
+
+.home .coffee ol {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.home .coffee ol li {
+    color: var(--dark-brick);
+}
+
+.home .coffee .definition {
+    transform: translate(-115%, -380%);
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--blue-green);
+    font-weight: bold;
+    width: 40vw;
+    position:absolute;
+}
+
+.home .coffee .definition span:nth-child(1){
+    display: block;
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+}
+
+.home .coffee .definition span:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+}
+
+.home .coffee img {
+    width: 100%;
+    position: absolute;
+    transform: translate(-110%, -280%);
+    border-radius: 50px;
+}
+
+.home a[href="order.html"] button{
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    transform: translate(100%, -1350%);
+}
+
+.home a[href="order.html"] button:hover {
+    transform: translate(100%, -1350%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+.home #bottomPage {
+    transform: translate(-110%, -150%);
+    background-image: url(Images/brickwall.png);
+    border-radius: 50px;
+    color: white;
+    padding: 30px;
+}
+
+a[href="#title"] {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transform: translate(-350%, -400%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+a[href="#title"]:hover {
+    transform: translate(-350%, -400%) scale(1.1);
+    background-color: var(--blue-green);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Images/brickwall.png);
+    color: var(--white);
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    justify-content: center;
+    min-height: 100px;
+    margin-top: 50px;
+}
+
+footer #title {
+    all: unset;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer .contacts {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+footer p{
+    font-size: 1rem;
+    text-align: center;
+    display: inline;
+}
+
+/*Order*/
+
+
+/*About*/
+
+
+/* 
+ 
+
+LABORATORY EXERCISE #4
+Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
+You are NOT allowed to modify/change the HTML files.
+
+Tips: 
+1. There are some elements that have no classes at all (such as the list of steps in making coffee), to style them, 
+you can use contextual selectors or attribute selectors to select them for styling
+2. Just with any web design project, it's best to draft a wireframe first before you start working with the CSS.
+3. You do not have to select all the classes/ids in the web pages; 
+the main goal is to create a website that is both visually appealing and user-friendly.
+*/
