@@ -413,7 +413,7 @@ footer p{
     transform: translate(45%,-145%);
 }
 
-.coffee:has(#banner) p.definition {
+.about .coffee:has(#banner) p.definition {
     font-size: 1.9rem;
     text-align: center;
     color: var(--dark-brick);
@@ -433,7 +433,7 @@ footer p{
     transform: translate(80%, -440%);
 }
 
-.coffee ul{
+.about .coffee ul{
     list-style: none;
     padding: 0;
     display: flex;
@@ -443,7 +443,7 @@ footer p{
     margin-top: -300px;
 }
 
-.coffeeVideo{
+.about .coffeeVideo{
     width: 60vw;
     max-width: 800px;
     height: auto;
@@ -455,7 +455,7 @@ footer p{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.coffeeVideo:hover{
+.about .coffeeVideo:hover{
     transform: scale(1.05);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }
@@ -470,12 +470,12 @@ footer p{
     transform: translate(90%, 0%);
 }
 
-.coffee table tr:nth-child(1) td {
+.about .coffee table tr:nth-child(1) td {
     text-align: center;
     transform: translate(0%, -5%);
 }
 
-.teamMember{
+.about .teamMember{
     width: 300px;
     height: 250px;
     border-radius: 20px;
@@ -484,12 +484,12 @@ footer p{
     transition: trasnform 0.3s ease-in-out;
 }
 
-.teamMember:hover{
+.about .teamMember:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.coffee table tr:nth-child(2) td {
+.about .coffee table tr:nth-child(2) td {
     padding: 10px;
     text-align: center;
     font-size: 1rem;
@@ -498,7 +498,7 @@ footer p{
     transform: translate(0%, -10%);
 }
 
-.label::after{
+.about .label::after{
     content: '';
     display: block;
     width: 80%;
@@ -507,7 +507,7 @@ footer p{
     margin: 5px auto 0;
 }
 
-.coffee:nth-of-type(5){
+.about .coffee:nth-of-type(5){
     font-size: 1.0rem;
     text-align: center;
     color: var(--white);
@@ -527,7 +527,7 @@ footer p{
     font-weight: bold;
 } 
 
-.coffee:nth-of-type(6){
+.about .coffee:nth-of-type(6){
     font-size: 1.0rem;
     text-align: justify;
     color: var(--dark-brick);
@@ -544,7 +544,7 @@ footer p{
     border-radius: 5px;
 }
 
-.coffee:nth-of-type(6) img{  
+.about .coffee:nth-of-type(6) img{  
     display: block;
     margin: 20px auto;
     width: 70%;
@@ -555,7 +555,7 @@ footer p{
     transform: translate(140%, -90%);
 }
 
-.coffee:nth-of-type(7){
+.about .coffee:nth-of-type(7){
     font-size: 1.0rem;
     text-align: justify;
     color: var(--dark-brick);
