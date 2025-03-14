@@ -316,6 +316,7 @@ header #title {
 
 footer {
     grid-column: 1 / -1;
+    grid-row-start: 12;
     align-items: center;
     background-image: url(Images/brickwall.png);
     color: var(--white);
