@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
+:root {
+    --light-yellow: #FFE8BD;
+    --yellow-orange: #D19240;
+    --blue-green: #839792;
+    --dark-brick:#813D3A;
+    --white: #FFFFFF;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: Fredoka;
+  background-color: var(--light-yellow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(12, auto);
+  gap: 20px;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*Header*/
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    gap: 20px;
+}
+
+header {
+    background-image: url(Images/brickwall.png);
+    height: 65vh;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+hr {
+    border: 0px solid #000;
+}
+
+header #title {
+    position: relative;
+    font-size: 5.5rem;
+    color: var(--light-yellow);
+    text-align: left;
+    padding: 5%;
+    line-height: 110%;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+#welcome{
+    font-size: 1.5rem;
+    color: var(--white);
+    width: 60%;
+    position: absolute;
+    transform: translate(10%, 480%);
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 2%;
+    gap: 3%;
+    right: 20px;
+}
+
+.navigation{
+    text-decoration: none;
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Coffee definition*/
+.home .coffee:nth-of-type(3){
+    font-size: 1.25rem;
+    width: 80%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+    color: var(--blue-green);
+}
+
+.home .coffee p.definition span.emphasis:nth-child(1){
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+    display: block;
+}
+
+.home .coffee p.definition span.emphasis:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--yellow-orange);
+}
+
+.home #banner{
+    grid-column-start: 2;
+    grid-row-start: -12;
+    margin-top: 2rem;
+}
+
+.home .imgBanner {
+    width: 50vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50px;
+    right: 20px;
+}
+
+
+.home a[href="#bottomPage"] { 
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 240px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    grid-column-start: 2;
+    grid-row-start: -11;
+    z-index: 1;
+    height: 60px;
+    margin-left: 450px;
+}
+
+.home a[href="#bottomPage"]:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Coffee Image*/
+.home .coffee:nth-of-type(4){
+    margin-top: 120px;
+    grid-column-start: 1;
+    grid-row-start: -11;
+    align-self: top;
+    justify-self: center;
+}
+
+
+.home .coffee img {
+    width: 600px;
+    border-radius: 50px;
+}
+
+.home a[href="order.html"] {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+.home a[href="order.html"] button{
+    background-color: var(--yellow-orange);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    position: relative;
+    top: -150px;
+}
+
+.home a[href="order.html"] button:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+/*Steps in Making Coffee*/
+.home .coffee:nth-of-type(2){
+    grid-column-start: 2;
+    grid-row-start: -11;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+    width: 80%;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.home .coffee:nth-of-type(2) h2{
+    font-size: 4rem;
+    width: 80%;
+    color: var(--blue-green);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home .coffee:nth-of-type(2) ol{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.home .coffee:nth-of-type(2) ol li{
+    color: var(--dark-brick);
+}
+
+/*Coffee History*/
+.home .coffee:nth-of-type(5){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-top: 20rem;
+    font-size: 1.3rem;
+}
+
+.home .coffee #bottomPage {
+    margin-top: 50px;
+    background-image: url(Images/brickwall.png);
+    border-radius: 50px;
+    color: var(--light-yellow);
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+/*Go to Top Button*/
+.home a[href="#title"] {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--dark-brick);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    margin-top: 10px;
+    margin-right: 50%;
+}
+
+.home a[href="#title"]:hover {
+    transform: scale(1.1);
+    background-color: var(--blue-green);
+}
+
+footer {
+    grid-column: 1 / -1;
+    align-items: center;
+    background-image: url(Images/brickwall.png);
+    color: var(--white);
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    justify-content: center;
+    min-height: 100px;
+}
+
+footer #title {
+    all: unset;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer .contacts {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+footer p{
+    font-size: 1rem;
+    text-align: center;
+    display: inline;
+}
+
