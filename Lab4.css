@@ -24,14 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: Fredoka;
   background-color: var(--light-yellow);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, auto);
-  gap: 20px;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
 }
 
 /*body {
@@ -88,19 +80,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12, auto);
     gap: 20px;
-<<<<<<< HEAD
-=======
-}
-
-header {
-    background-image: url(Images/brickwall.png);
-    height: 65vh;
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
 }
 
 .home header {
@@ -137,11 +116,7 @@ hr {
     border: 0px solid #000;
 }
 
-<<<<<<< HEAD
 .home header #title {
-=======
-header #title {
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
     position: relative;
     font-size: 5.5rem;
     color: var(--light-yellow);
@@ -292,10 +267,6 @@ header #title {
     right: 20px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
 .home a[href="#bottomPage"] { 
     display: inline-block;
     text-decoration: none;
@@ -436,11 +407,7 @@ header #title {
     background-color: var(--blue-green);
 }
 
-<<<<<<< HEAD
 .home footer {
-=======
-footer {
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
     grid-column: 1 / -1;
     align-items: center;
     background-image: url(Images/brickwall.png);
@@ -475,7 +442,6 @@ footer {
     display: inline;
 }
 
-<<<<<<< HEAD
 /*Order*/
 .order .imgBanner {
     width: 95vw;
@@ -556,89 +522,11 @@ footer {
 .order .coffeeImg {
     width: 300%; 
     height: 250%;
-=======
-/* About */
-.about .coffee .imgBanner{
-    width: 330px;
-    height: 330px;
+    border-radius: 20px;
     object-fit: cover;
-    border-radius: 50%;
-    transform: translate(45%,-145%);
+    transition: transform 0.3s ease;
 }
 
-.about .coffee:has(#banner) p.definition {
-    font-size: 1.9rem;
-    text-align: center;
-    color: var(--dark-brick);
-    font-weight: bold;
-    width: 40vw;
-    position:absolute;
-    transform: translate(7%, -530%);
-} 
-
-.about .coffee:nth-of-type(3) h2{
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--dark-brick); 
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    width: 40%;
-    transform: translate(80%, -440%);
-}
-
-.about .coffee ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; 
-    margin-top: -300px;
-}
-
-.about .coffeeVideo{
-    width: 60vw;
-    max-width: 800px;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-    margin: 20px auto;
-    margin-top: -20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.about .coffeeVideo:hover{
-    transform: scale(1.05);
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
-}
-
-.about .coffee:nth-of-type(4) h2{
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--dark-brick); 
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    width: 40%;
-    transform: translate(90%, 0%);
-}
-
-.about .coffee table tr:nth-child(1) td {
-    text-align: center;
-    transform: translate(0%, -5%);
-}
-
-.about .teamMember{
-    width: 300px;
-    height: 250px;
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
-    border-radius: 20px;
-    display: block;
-    margin: 20px auto;
-    transition: trasnform 0.3s ease-in-out;
-}
-
-<<<<<<< HEAD
 .order .coffeeImg:hover {
     transform: scale(1.05); 
 }
@@ -655,97 +543,6 @@ footer {
     border-radius: 30px;
     font-size: 0.9rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-=======
-.about .teamMember:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-}
-
-.about .coffee table tr:nth-child(2) td {
-    padding: 10px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--dark-brick);
-    transform: translate(0%, -10%);
-}
-
-.about .label::after{
-    content: '';
-    display: block;
-    width: 80%;
-    height: 2px;
-    background-color: var(--dark-brick);
-    margin: 5px auto 0;
-}
-
-.about .coffee:nth-of-type(5){
-    font-size: 1.0rem;
-    text-align: center;
-    color: var(--white);
-    width: 80%;
-    background-color:  #813D3A;
-    padding: 10px 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    transform: translate(0%, 15%);
-}
-
-.about .coffee .emphasis{
-    font-size: 1.3rem;
-    line-height: 1.6;
-    color: #000;
-    text-align: center;
-    font-weight: bold;
-} 
-
-.about .coffee:nth-of-type(6){
-    font-size: 1.0rem;
-    text-align: justify;
-    color: var(--dark-brick);
-    width: 30vw;
-    transform: translate(10%, 15%);
-}
-
-
-.about .coffee .term{
-    font-weight: bold;
-    color: #8b5e3b;
-    background: rgba(255, 239, 210, 0.5);
-    padding: 2px 5px;
-    border-radius: 5px;
-}
-
-.about .coffee:nth-of-type(6) img{  
-    display: block;
-    margin: 20px auto;
-    width: 70%;
-    height: 50%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(140%, -90%);
-}
-
-.about .coffee:nth-of-type(7){
-    font-size: 1.0rem;
-    text-align: justify;
-    color: var(--dark-brick);
-    width:30vw;
-    transform: translate(210%, -210%);
-}
-
-.about .coffee #bottomPage{
-    border-radius: 50px;
-    background-color: #813D3A;
-    padding: 30px;
-    text-align: left;
-    transform: translate(-5%, -210%); 
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    color: #FFFFFF;
->>>>>>> 3a15425d981bfaeb4798916c4e975d8ae95c4d6d
 }
 
 .order #coffee_choices tr:nth-child(4) td {
